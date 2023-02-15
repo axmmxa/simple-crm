@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 
+constructor() {
+
+
+
+}
+
+addUser() {
+    console.log("add new user")
+}
+
 }
