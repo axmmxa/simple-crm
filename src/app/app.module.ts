@@ -9,11 +9,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIcon, MatIconModule} from '@angular/material/icon';
 import { DahsboardComponent } from './dahsboard/dahsboard.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DahsboardComponent
+    DahsboardComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
