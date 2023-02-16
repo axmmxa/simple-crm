@@ -14,7 +14,6 @@ user = new User();
 
 
 constructor(public dialog: MatDialog) {
-  
 }
   
 openDialog() {

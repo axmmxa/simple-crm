@@ -16,5 +16,6 @@ export class DialogAddUserComponent {
   saveUser() {
     this.user.birthDate = this.birthDate.getTime()
     console.log("user:", this.user)
+
   }
 }
