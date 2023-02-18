@@ -20,7 +20,7 @@ constructor(public dialog: MatDialog, private firestore: AngularFirestore) {
 ngOnInit(): void {
   this.firestore
   .collection('users')
-  .valueChanges()
+  .valueChanges({idField: "customIdName"})
   .subscribe( (changes:any) => {
     console.log("recieved changes from DB", changes)
     this.allUsers = changes
