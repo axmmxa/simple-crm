@@ -26,6 +26,7 @@ import { environment } from '../environments/environment';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 
 
@@ -35,6 +36,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     DahsboardComponent,
     UserComponent,
     DialogAddUserComponent,
+    UserDetailComponent,
     
   ],
   imports: [
