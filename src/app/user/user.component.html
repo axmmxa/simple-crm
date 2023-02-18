@@ -7,16 +7,11 @@
         </tr>
 
 
-        <tr>
-            <td>sd</td>
-            <td>sdsd</td>
-            <td>sdd</td>
-        </tr>
-
-        <tr>
-            <td>sd</td>
-            <td>sdsd</td>
-            <td>sdd</td>
+        
+        <tr *ngFor="let user of allUsers">
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td> {{user.email}}</td>
+            <td>{{user.city}}</td>
         </tr>
         
     </table>
