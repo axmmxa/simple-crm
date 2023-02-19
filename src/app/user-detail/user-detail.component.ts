@@ -41,4 +41,8 @@ export class UserDetailComponent {
     })
   }
 
+  openAddressDialog() {
+    console.log("test")
+  }
+
 }
