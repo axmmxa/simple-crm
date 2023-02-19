@@ -45,4 +45,8 @@ export class UserDetailComponent {
     console.log("test")
   }
 
+  editUserDetail() {
+    console.log("test")
+  }
+
 }

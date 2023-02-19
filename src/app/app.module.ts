@@ -27,6 +27,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -58,6 +59,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     MatCardModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    MatMenuModule
 
   ],
   
