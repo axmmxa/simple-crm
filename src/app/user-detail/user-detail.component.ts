@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 import { user } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { User } from 'src/models/user.class';
+import { DialogAddUserComponent } from '../dialog-add-user/dialog-add-user.component';
+import { DialogEditAddressComponent } from '../dialog-edit-address/dialog-edit-address.component';
+import { DialogEditUserComponent } from '../dialog-edit-user/dialog-edit-user.component';
 
 @Component({
   selector: 'app-user-detail',
@@ -14,7 +18,7 @@ export class UserDetailComponent {
   userId = ''
   user: User = new User;
 
-  constructor(private route:ActivatedRoute, private firestore: AngularFirestore) {
+  constructor(private route:ActivatedRoute, private firestore: AngularFirestore, public dialog: MatDialog,) {
 
   }
 
@@ -41,12 +45,18 @@ export class UserDetailComponent {
     })
   }
 
+  editMenu() {
+    this.dialog.open(DialogEditAddressComponent)
+  }
+
+  editUserDetail() {
+    this.dialog.open(DialogEditUserComponent)
+  }
+
   openAddressDialog() {
     console.log("test")
   }
 
-  editUserDetail() {
-    console.log("test")
-  }
+  
 
 }

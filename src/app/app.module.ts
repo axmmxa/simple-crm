@@ -28,6 +28,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { DialogEditAddressComponent } from './dialog-edit-address/dialog-edit-address.component';
+import { DialogEditUserComponent } from './dialog-edit-user/dialog-edit-user.component';
 
 
 
@@ -38,6 +40,8 @@ import {MatMenuModule} from '@angular/material/menu';
     UserComponent,
     DialogAddUserComponent,
     UserDetailComponent,
+    DialogEditAddressComponent,
+    DialogEditUserComponent,
     
   ],
   imports: [
